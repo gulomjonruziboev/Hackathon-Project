@@ -1,0 +1,230 @@
+{
+  "catalog_version": "demo-1.0",
+  "note": "Sintetik demo katalogi. Har moddaning qo'llab-quvvatlanadigan tekshiruvlari aniq ko'rsatilgan; katalogda bo'lishi barcha xavflar tekshirilishini anglatmaydi.",
+  "medications": [
+    {
+      "ingredient_code": "METFORMIN",
+      "ingredient_name": "Metformin",
+      "aliases": ["Glucophage", "Siofor", "Metfogamma", "Metformin gidroxlorid", "Metformin"],
+      "classes": ["biguanide", "antidiabetic"],
+      "allowed_forms": ["tablet", "extended_release_tablet"],
+      "allowed_units": ["mg", "tablet"],
+      "routes": ["oral"],
+      "products": [
+        { "form": "tablet", "strength_value": 500, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 850, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 1000, "strength_unit": "mg" }
+      ],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy", "drug_drug", "drug_condition"],
+      "unsupported_checks": ["dose_appropriateness", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    },
+    {
+      "ingredient_code": "EMPAGLIFLOZIN",
+      "ingredient_name": "Empagliflozin",
+      "aliases": ["Jardiance", "Empagliflozin"],
+      "classes": ["sglt2_inhibitor", "antidiabetic"],
+      "allowed_forms": ["tablet"],
+      "allowed_units": ["mg", "tablet"],
+      "routes": ["oral"],
+      "products": [
+        { "form": "tablet", "strength_value": 10, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 25, "strength_unit": "mg" }
+      ],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy", "drug_condition"],
+      "unsupported_checks": ["dose_appropriateness", "drug_drug", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    },
+    {
+      "ingredient_code": "GLIBENCLAMIDE",
+      "ingredient_name": "Glibenklamid",
+      "aliases": ["Glyburide", "Maninil", "Glibenclamide", "Glibenklamid"],
+      "classes": ["sulfonylurea", "antidiabetic"],
+      "allowed_forms": ["tablet"],
+      "allowed_units": ["mg", "tablet"],
+      "routes": ["oral"],
+      "products": [
+        { "form": "tablet", "strength_value": 3.5, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 5, "strength_unit": "mg" }
+      ],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy", "drug_condition"],
+      "unsupported_checks": ["dose_appropriateness", "drug_drug", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    },
+    {
+      "ingredient_code": "GLICLAZIDE",
+      "ingredient_name": "Gliklazid",
+      "aliases": ["Diabeton", "Gliclazide", "Gliklazid"],
+      "classes": ["sulfonylurea", "antidiabetic"],
+      "allowed_forms": ["tablet", "extended_release_tablet"],
+      "allowed_units": ["mg", "tablet"],
+      "routes": ["oral"],
+      "products": [
+        { "form": "extended_release_tablet", "strength_value": 30, "strength_unit": "mg" },
+        { "form": "extended_release_tablet", "strength_value": 60, "strength_unit": "mg" }
+      ],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy", "drug_condition"],
+      "unsupported_checks": ["dose_appropriateness", "drug_drug", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    },
+    {
+      "ingredient_code": "INSULIN_GLARGINE",
+      "ingredient_name": "Insulin glargin",
+      "aliases": ["Lantus", "Insulin glargine", "Glargin"],
+      "classes": ["insulin", "antidiabetic"],
+      "allowed_forms": ["solution_for_injection"],
+      "allowed_units": ["unit"],
+      "routes": ["subcutaneous"],
+      "products": [],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy"],
+      "unsupported_checks": ["dose_appropriateness", "drug_drug", "drug_condition", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    },
+    {
+      "ingredient_code": "LISINOPRIL",
+      "ingredient_name": "Lizinopril",
+      "aliases": ["Prinivil", "Diroton", "Lisinopril", "Lizinopril"],
+      "classes": ["ace_inhibitor", "raas_agent", "antihypertensive"],
+      "allowed_forms": ["tablet"],
+      "allowed_units": ["mg", "tablet"],
+      "routes": ["oral"],
+      "products": [
+        { "form": "tablet", "strength_value": 5, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 10, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 20, "strength_unit": "mg" }
+      ],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy", "drug_drug", "drug_condition", "monitoring"],
+      "unsupported_checks": ["dose_appropriateness", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    },
+    {
+      "ingredient_code": "LOSARTAN",
+      "ingredient_name": "Losartan",
+      "aliases": ["Cozaar", "Lorista", "Losartan kaliy", "Losartan"],
+      "classes": ["arb", "raas_agent", "antihypertensive"],
+      "allowed_forms": ["tablet"],
+      "allowed_units": ["mg", "tablet"],
+      "routes": ["oral"],
+      "products": [
+        { "form": "tablet", "strength_value": 25, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 50, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 100, "strength_unit": "mg" }
+      ],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy", "drug_drug", "drug_condition", "monitoring"],
+      "unsupported_checks": ["dose_appropriateness", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    },
+    {
+      "ingredient_code": "SPIRONOLACTONE",
+      "ingredient_name": "Spironolakton",
+      "aliases": ["Aldactone", "Veroshpiron", "Spironolactone", "Spironolakton"],
+      "classes": ["mra", "potassium_sparing_diuretic", "diuretic"],
+      "allowed_forms": ["tablet"],
+      "allowed_units": ["mg", "tablet"],
+      "routes": ["oral"],
+      "products": [
+        { "form": "tablet", "strength_value": 25, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 50, "strength_unit": "mg" }
+      ],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy", "drug_drug", "drug_condition", "monitoring"],
+      "unsupported_checks": ["dose_appropriateness", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    },
+    {
+      "ingredient_code": "FUROSEMIDE",
+      "ingredient_name": "Furosemid",
+      "aliases": ["Lasix", "Furosemide", "Furosemid"],
+      "classes": ["loop_diuretic", "diuretic"],
+      "allowed_forms": ["tablet", "solution_for_injection"],
+      "allowed_units": ["mg", "tablet"],
+      "routes": ["oral", "intravenous"],
+      "products": [
+        { "form": "tablet", "strength_value": 40, "strength_unit": "mg" }
+      ],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy", "drug_drug"],
+      "unsupported_checks": ["dose_appropriateness", "drug_condition", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    },
+    {
+      "ingredient_code": "AMLODIPINE",
+      "ingredient_name": "Amlodipin",
+      "aliases": ["Norvasc", "Amlodipine", "Amlodipin"],
+      "classes": ["calcium_channel_blocker", "antihypertensive"],
+      "allowed_forms": ["tablet"],
+      "allowed_units": ["mg", "tablet"],
+      "routes": ["oral"],
+      "products": [
+        { "form": "tablet", "strength_value": 5, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 10, "strength_unit": "mg" }
+      ],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy"],
+      "unsupported_checks": ["dose_appropriateness", "drug_drug", "drug_condition", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    },
+    {
+      "ingredient_code": "ATORVASTATIN",
+      "ingredient_name": "Atorvastatin",
+      "aliases": ["Lipitor", "Atoris", "Atorvastatin"],
+      "classes": ["statin"],
+      "allowed_forms": ["tablet"],
+      "allowed_units": ["mg", "tablet"],
+      "routes": ["oral"],
+      "products": [
+        { "form": "tablet", "strength_value": 10, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 20, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 40, "strength_unit": "mg" }
+      ],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy"],
+      "unsupported_checks": ["dose_appropriateness", "drug_drug", "drug_condition", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    },
+    {
+      "ingredient_code": "IBUPROFEN",
+      "ingredient_name": "Ibuprofen",
+      "aliases": ["Nurofen", "Brufen", "Ibuprofen"],
+      "classes": ["nsaid", "analgesic"],
+      "allowed_forms": ["tablet", "capsule"],
+      "allowed_units": ["mg", "tablet"],
+      "routes": ["oral"],
+      "products": [
+        { "form": "tablet", "strength_value": 200, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 400, "strength_unit": "mg" }
+      ],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy", "drug_drug", "drug_condition"],
+      "unsupported_checks": ["dose_appropriateness", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    },
+    {
+      "ingredient_code": "DICLOFENAC",
+      "ingredient_name": "Diklofenak",
+      "aliases": ["Voltaren", "Diclofenac", "Diklofenak"],
+      "classes": ["nsaid", "analgesic"],
+      "allowed_forms": ["tablet", "solution_for_injection"],
+      "allowed_units": ["mg", "tablet"],
+      "routes": ["oral", "intramuscular"],
+      "products": [
+        { "form": "tablet", "strength_value": 50, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 75, "strength_unit": "mg" }
+      ],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy", "drug_drug", "drug_condition"],
+      "unsupported_checks": ["dose_appropriateness", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    },
+    {
+      "ingredient_code": "AMOXICILLIN",
+      "ingredient_name": "Amoksitsillin",
+      "aliases": ["Amoxil", "Amoxicillin", "Amoksitsillin", "Flemoxin"],
+      "classes": ["penicillin", "antibiotic"],
+      "allowed_forms": ["capsule", "tablet"],
+      "allowed_units": ["mg", "tablet"],
+      "routes": ["oral"],
+      "products": [
+        { "form": "capsule", "strength_value": 500, "strength_unit": "mg" }
+      ],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy"],
+      "unsupported_checks": ["dose_appropriateness", "drug_drug", "drug_condition", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    },
+    {
+      "ingredient_code": "CIPROFLOXACIN",
+      "ingredient_name": "Siprofloksatsin",
+      "aliases": ["Cipro", "Ciprofloxacin", "Siprofloksatsin", "Tsiprofloksatsin"],
+      "classes": ["fluoroquinolone", "antibiotic"],
+      "allowed_forms": ["tablet"],
+      "allowed_units": ["mg", "tablet"],
+      "routes": ["oral"],
+      "products": [
+        { "form": "tablet", "strength_value": 250, "strength_unit": "mg" },
+        { "form": "tablet", "strength_value": 500, "strength_unit": "mg" }
+      ],
+      "supported_checks": ["duplicate_ingredient", "drug_allergy"],
+      "unsupported_checks": ["dose_appropriateness", "drug_drug", "drug_condition", "renal_dose_adjustment", "pregnancy", "hepatic_adjustment", "pediatric"]
+    }
+  ]
+}

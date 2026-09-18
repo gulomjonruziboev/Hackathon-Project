@@ -1,0 +1,106 @@
+{
+  "evidence_version": "demo-1.0",
+  "note": "Quyidagi yozuvlar manba havolalari ro'yxati. Ularning matni ko'chirilmagan va hech bir threshold shu yerdan avtomatik olinmagan. `verification_status` maydoni jamoa a'zosi manbani ochib, tegishli bo'limni va nashr versiyasini tekshirganini bildiradi. `pending_review` bo'lsa, unga tayangan qoida klinik natijalar to'plamiga kirmaydi.",
+  "sources": [
+    {
+      "id": "EV_KDIGO_CKD",
+      "title": "KDIGO Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease",
+      "url": "https://kdigo.org/guidelines/ckd-evaluation-and-management/",
+      "section": null,
+      "content_version": null,
+      "accessed_at": null,
+      "verification_status": "pending_review",
+      "license_note": "Nashr huquqi KDIGO tashkilotida. Matn ko'chirilmagan, faqat havola saqlanadi. Tarqatishdan oldin foydalanish shartlari tekshiriladi."
+    },
+    {
+      "id": "EV_DAILYMED_METFORMIN",
+      "title": "DailyMed — Metformin hydrochloride prescribing information (FDA label)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=metformin",
+      "section": null,
+      "content_version": null,
+      "accessed_at": null,
+      "verification_status": "pending_review",
+      "license_note": "AQSh FDA yorlig'i ochiq manba. Aniq label versiyasi va bo'limi qoida yoqilishidan oldin qayd etiladi."
+    },
+    {
+      "id": "EV_DAILYMED_LISINOPRIL",
+      "title": "DailyMed — Lisinopril prescribing information (FDA label)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=lisinopril",
+      "section": null,
+      "content_version": null,
+      "accessed_at": null,
+      "verification_status": "pending_review",
+      "license_note": "AQSh FDA yorlig'i ochiq manba. Bo'lim va versiya tekshiruvdan keyin to'ldiriladi."
+    },
+    {
+      "id": "EV_DAILYMED_LOSARTAN",
+      "title": "DailyMed — Losartan potassium prescribing information (FDA label)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=losartan",
+      "section": null,
+      "content_version": null,
+      "accessed_at": null,
+      "verification_status": "pending_review",
+      "license_note": "AQSh FDA yorlig'i ochiq manba. Bo'lim va versiya tekshiruvdan keyin to'ldiriladi."
+    },
+    {
+      "id": "EV_DAILYMED_SPIRONOLACTONE",
+      "title": "DailyMed — Spironolactone prescribing information (FDA label)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=spironolactone",
+      "section": null,
+      "content_version": null,
+      "accessed_at": null,
+      "verification_status": "pending_review",
+      "license_note": "AQSh FDA yorlig'i ochiq manba. Bo'lim va versiya tekshiruvdan keyin to'ldiriladi."
+    },
+    {
+      "id": "EV_DAILYMED_NSAID",
+      "title": "DailyMed — Ibuprofen / Diclofenac prescribing information (FDA label)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ibuprofen",
+      "section": null,
+      "content_version": null,
+      "accessed_at": null,
+      "verification_status": "pending_review",
+      "license_note": "AQSh FDA yorlig'i ochiq manba. Bo'lim va versiya tekshiruvdan keyin to'ldiriladi."
+    },
+    {
+      "id": "EV_DAILYMED_GLIBENCLAMIDE",
+      "title": "DailyMed — Glyburide (glibenclamide) prescribing information (FDA label)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=glyburide",
+      "section": null,
+      "content_version": null,
+      "accessed_at": null,
+      "verification_status": "pending_review",
+      "license_note": "AQSh FDA yorlig'i ochiq manba. Bo'lim va versiya tekshiruvdan keyin to'ldiriladi."
+    },
+    {
+      "id": "EV_DAILYMED_EMPAGLIFLOZIN",
+      "title": "DailyMed — Empagliflozin prescribing information (FDA label)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=empagliflozin",
+      "section": null,
+      "content_version": null,
+      "accessed_at": null,
+      "verification_status": "pending_review",
+      "license_note": "AQSh FDA yorlig'i ochiq manba. Bo'lim va versiya tekshiruvdan keyin to'ldiriladi."
+    },
+    {
+      "id": "EV_MECHANICAL_NO_SOURCE",
+      "title": "Mexanik tekshiruv — tashqi klinik manba talab qilinmaydi",
+      "url": null,
+      "section": null,
+      "content_version": null,
+      "accessed_at": null,
+      "verification_status": "not_applicable",
+      "license_note": "Bu yozuv faqat ro'yxat ichidagi aniq moslikni (masalan, bir xil faol moddaning takrorlanishi yoki tasdiqlangan allergiya bilan aynan moslik) tekshiradigan qoidalar uchun. Bunday qoidada klinik threshold yo'q."
+    },
+    {
+      "id": "EV_KFRE",
+      "title": "Kidney Failure Risk Equation (KFRE)",
+      "url": "https://kidneyfailurerisk.com/",
+      "section": null,
+      "content_version": null,
+      "accessed_at": null,
+      "verification_status": "pending_review",
+      "license_note": "P1 modul uchun nomzod. Formula, koeffitsiyentlar, birliklar, populyatsiya chegarasi va foydalanish shartlari yoqishdan oldin tekshiriladi."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/patients/[id]/audit/page": "app/patients/[id]/audit/page.js",
+  "/patients/[id]/documents/[documentId]/page": "app/patients/[id]/documents/[documentId]/page.js",
+  "/patients/[id]/page": "app/patients/[id]/page.js",
+  "/patients/[id]/scenarios/page": "app/patients/[id]/scenarios/page.js",
+  "/patients/page": "app/patients/page.js",
+  "/system/page": "app/system/page.js"
+}

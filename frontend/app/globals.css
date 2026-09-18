@@ -1,0 +1,492 @@
+/*
+ * Spec "Umumiy dizayn": white background, dark blue body text, teal primary
+ * buttons. Colour never carries meaning alone — every status also has text and
+ * an icon — and focus is always visible for keyboard users.
+ */
+
+:root {
+  --bg: #ffffff;
+  --surface: #f7f9fc;
+  --surface-alt: #eef3f9;
+  --border: #d3dce8;
+  --border-strong: #a9b9cd;
+
+  --ink: #11244a;
+  --ink-muted: #46587a;
+  --ink-faint: #6b7c99;
+
+  --teal: #0f7f7f;
+  --teal-dark: #0b6363;
+  --teal-light: #e2f3f2;
+
+  --high: #9b1c1c;
+  --high-bg: #fdeaea;
+  --moderate: #9a5b00;
+  --moderate-bg: #fdf1e0;
+  --review: #1d4ed8;
+  --review-bg: #e8effd;
+  --info: #3f5675;
+  --info-bg: #eef2f8;
+  --ok: #17643f;
+  --ok-bg: #e5f4ec;
+
+  --radius: 8px;
+  --focus: 3px solid #1d4ed8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--teal-dark);
+}
+
+:focus-visible {
+  outline: var(--focus);
+  outline-offset: 2px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin: 0 0 8px;
+}
+
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 19px;
+}
+h3 {
+  font-size: 16px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+/* ---------- layout ---------- */
+
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.topbar .spacer {
+  margin-left: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 18px 20px 48px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 16px;
+}
+
+.grid-side {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1100px) {
+  .grid-2,
+  .grid-side {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* ---------- cards & tables ---------- */
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+
+.card.muted {
+  background: var(--surface);
+}
+
+.card h2,
+.card h3 {
+  margin-top: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 7px 8px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+th {
+  color: var(--ink-muted);
+  font-weight: 600;
+  background: var(--surface-alt);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* ---------- controls ---------- */
+
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: var(--ink-muted);
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='date'],
+select,
+textarea {
+  width: 100%;
+  padding: 7px 9px;
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  font: inherit;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+textarea {
+  min-height: 72px;
+  resize: vertical;
+}
+
+.field {
+  margin-bottom: 12px;
+}
+
+.field-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.field-row > * {
+  flex: 1 1 140px;
+}
+
+button {
+  font: inherit;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background: var(--teal);
+  color: #ffffff;
+}
+
+button:hover:not(:disabled) {
+  background: var(--teal-dark);
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: var(--bg);
+  color: var(--ink);
+  border-color: var(--border-strong);
+}
+
+button.secondary:hover:not(:disabled) {
+  background: var(--surface-alt);
+}
+
+button.danger {
+  background: var(--bg);
+  color: var(--high);
+  border-color: var(--high);
+}
+
+button.link {
+  background: none;
+  border: none;
+  color: var(--teal-dark);
+  text-decoration: underline;
+  padding: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* ---------- badges & status ---------- */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+}
+
+.badge .glyph {
+  font-size: 12px;
+}
+
+.badge-high {
+  color: var(--high);
+  background: var(--high-bg);
+}
+.badge-moderate {
+  color: var(--moderate);
+  background: var(--moderate-bg);
+}
+.badge-review {
+  color: var(--review);
+  background: var(--review-bg);
+}
+.badge-info {
+  color: var(--info);
+  background: var(--info-bg);
+}
+.badge-ok {
+  color: var(--ok);
+  background: var(--ok-bg);
+}
+.badge-neutral {
+  color: var(--ink-muted);
+  background: var(--surface-alt);
+}
+
+.synthetic-banner {
+  border: 1px solid var(--border-strong);
+  background: var(--surface-alt);
+  border-radius: var(--radius);
+  padding: 8px 12px;
+  margin-bottom: 14px;
+  font-size: 13px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.notice {
+  border-left: 4px solid var(--review);
+  background: var(--review-bg);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13.5px;
+  margin-bottom: 12px;
+}
+
+.notice.warn {
+  border-left-color: var(--moderate);
+  background: var(--moderate-bg);
+}
+
+.notice.error {
+  border-left-color: var(--high);
+  background: var(--high-bg);
+}
+
+.notice.ok {
+  border-left-color: var(--ok);
+  background: var(--ok-bg);
+}
+
+.muted-text {
+  color: var(--ink-faint);
+  font-size: 13px;
+}
+
+.mono {
+  font-family: 'Cascadia Mono', Consolas, 'Courier New', monospace;
+  font-size: 12.5px;
+}
+
+/* ---------- finding cards ---------- */
+
+.finding {
+  border: 1px solid var(--border);
+  border-left-width: 5px;
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  background: var(--bg);
+}
+
+.finding-high {
+  border-left-color: var(--high);
+}
+.finding-moderate {
+  border-left-color: var(--moderate);
+}
+.finding-review_required {
+  border-left-color: var(--review);
+}
+.finding-info {
+  border-left-color: var(--info);
+}
+
+.finding-head {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+details.why > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--teal-dark);
+  margin-top: 6px;
+}
+
+details.why[open] > summary {
+  margin-bottom: 8px;
+}
+
+.why-body {
+  border-top: 1px dashed var(--border);
+  padding-top: 8px;
+  font-size: 13.5px;
+}
+
+.why-body dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 4px 12px;
+}
+
+.why-body dt {
+  font-weight: 600;
+  color: var(--ink-muted);
+}
+
+.why-body dd {
+  margin: 0;
+}
+
+/* ---------- source / extraction review ---------- */
+
+.source-pane {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  max-height: 70vh;
+  overflow: auto;
+  white-space: pre-wrap;
+  font-family: 'Cascadia Mono', Consolas, 'Courier New', monospace;
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+
+.candidate {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+
+.candidate.blocked {
+  border-color: var(--high);
+  background: var(--high-bg);
+}
+
+.candidate.rejected {
+  opacity: 0.6;
+}
+
+.quote {
+  border-left: 3px solid var(--border-strong);
+  padding-left: 8px;
+  color: var(--ink-muted);
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+.list-reset {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  left: 8px;
+  top: 8px;
+  z-index: 10;
+  background: var(--bg);
+  padding: 8px 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+}

@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/login/page": "/login",
+  "/page": "/",
+  "/patients/[id]/audit/page": "/patients/[id]/audit",
+  "/patients/[id]/documents/[documentId]/page": "/patients/[id]/documents/[documentId]",
+  "/patients/[id]/page": "/patients/[id]",
+  "/patients/[id]/scenarios/page": "/patients/[id]/scenarios",
+  "/patients/page": "/patients",
+  "/system/page": "/system"
+}
